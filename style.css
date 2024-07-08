@@ -1,0 +1,123 @@
+body{
+    background: rgb(19, 17, 17);
+    
+}
+#face{
+    height: 200px;
+    width: 200px;
+    background: rgb(241, 9, 106);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: rgb(250, 75, 6);
+    margin-top: 18px;
+    border-radius: 50px;
+}
+
+#center{
+    height: 200px;
+    width: 200px;
+    background:rgb(255, 255, 255);
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#leye,#reye{
+    height: 20px;
+    width: 20px;
+    background: rgb(255, 250, 253);
+    margin-top: 18px;
+    margin: auto;
+    border-radius: 50px;
+    
+
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+}
+#lleg,#rleg{
+    height: 100px;
+    width: 25px;
+    background: rgb(250, 75, 6);
+    margin-top: 10px;
+    border-radius: 50px; 
+}
+#main{
+    height: 800px;
+    width: 500px;
+    border: 3px solid seashell;
+}
+
+#main:hover #face{
+    animation: changeface 1s 100 ;
+}
+
+@keyframes changeface {
+    0%{
+       transform: rotate(0deg);
+       background-color: rgb(251, 255, 0);
+    }
+    25%{
+        transform: rotate(0deg);
+        background-color: rgb(9, 9, 247);
+    }
+    50%{
+        transform: rotate(0deg);
+        background-color: rgb(255, 0, 13);
+    }
+    75%{
+        transform: rotate(0deg);
+        background-color: rgb(33, 255, 4);
+    }
+    100%{
+        transform: rotate(1080deg);
+        background-color: rgb(3, 232, 248);
+    }  
+}
+
+
+#main:hover #rlegs{
+    animation: changerlegs 1s 100;
+}
+
+@keyframes changerlegs {
+    0%{
+       transform: rotate(30deg);
+       background-color: rgb(251, 255, 0);
+    }
+    25%{
+        transform: rotate(30deg);
+        background-color: rgb(9, 9, 247);
+    }
+    50%{
+        transform: rotate(30deg);
+        background-color: rgb(255, 0, 13);
+    }
+    75%{
+        transform: rotate(30deg);
+        background-color: rgb(33, 255, 4);
+    }
+    100%{
+        transform: rotate(1080deg);
+        background-color: rgb(3, 232, 248);
+    }  
+}
